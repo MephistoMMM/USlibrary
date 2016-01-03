@@ -1,2 +1,2 @@
 # USlibrary
-My UlitSnippet library
+My UltiSnippet library
