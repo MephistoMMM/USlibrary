@@ -1,0 +1,20 @@
+# This file is used to difined c snippets 
+# 
+# Index:
+#	init.chead -------------------- init a c head
+# 
+# Author: Mephis Pheies
+# Email: mephistommm@gmail.com
+# Update: 21.12.2015
+
+
+# init a c head
+snippet init.chead "#include ... #ifndef ... #endif" b
+#ifndef ${1:FILE_MAC}
+#define $1 1
+
+$2
+
+#endif
+endsnippet
+
