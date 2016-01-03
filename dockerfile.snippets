@@ -1,0 +1,19 @@
+# This file is defined for dockerfile 
+# 
+# Index:
+#	init.dockerfile ---------------- init a dockerfile 
+# 
+# Author: Mephis Pheies
+# Email: mephistommm@gmail.com
+# Update: 03.01.2016
+
+
+#init a dockerfile 
+snippet init.dockerfile "init a dockerfile" b
+FROM ${1:ubuntu:14.04}
+MAINTAINER Mephis Pheies <mephistommm@gmail.com>
+
+ENV REBUILD_DAY `date +%d`.`date +%m`.`date +%Y`
+
+$0
+endsnippet
