@@ -24,11 +24,16 @@ class ${1:cpntName} extends Component {
 	  )
   }
 }
-$1.propTypes = {style: React.PropTypes.object}
-$1.defaultProps = {style: {}}
+$1.propTypes = {
+  style: React.PropTypes.object
+}
+$1.defaultProps = {
+  style: {}
+}
 endsnippet
 
 
 snippet ireact "import React, {Component} ..." b
 import React, { Component } from 'react'
+$0
 endsnippet
