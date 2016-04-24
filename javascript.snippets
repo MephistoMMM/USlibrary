@@ -1,10 +1,39 @@
 # This file is used to define js snippets 
 # 
 # Index:
-#	init.wp ------------------ init webpack config 
+#	component ---------------------- start a component
+#   ireact ------------------------- init react
 # 
 # Author: Mephis Pheies
 # Email: mephistommm@gmail.com
 # Update: 23.12.2015
 
+snippet component "class cpntName extends Component ..." 
+class ${1:cpntName} extends Component {
 
+  constructor(props){
+    super(props)
+	  ${3:this.state = {${2:'state':1}}}
+	$0
+  }
+
+  render() {
+
+    return (
+	    ${4:<p>Hello World</p>}
+	  )
+  }
+}
+$1.propTypes = {
+  style: React.PropTypes.object
+}
+$1.defaultProps = {
+  style: {}
+}
+endsnippet
+
+
+snippet ireact "import React, {Component} ..." b
+import React, { Component } from 'react'
+$0
+endsnippet

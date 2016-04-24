@@ -4,6 +4,7 @@
 #	inheart ----------------- The statement in The Son of God
 #	date    ----------------- date.dot(format: dd.mm.YYYY)
 #	cdescription -------------- c style description
+#	bars	----------------- "----------------------------"
 #	
 
 
@@ -17,7 +18,7 @@ endsnippet
 
 # date (format: dd.mm.YYYY)
 snippet date.dot "dd.mm.YYYY"
-${1:`date +%d`}.${2:`date +%m`}.`date +%Y`
+${1:`date +%d`}.${2:`date +%m`}.`date +%Y`$0
 endsnippet
 
 # init a c description
@@ -31,4 +32,21 @@ snippet cdescription "/*init a file description*/" b
  * Email: mephistommm@gmail.com
  * Update: ${3:`date +%d`}.${4:`date +%m`}.`date +%Y`
  */
+ $0
 endsnippet
+
+snippet bars "bars line: {signal}---...----{signal2}" b
+${1:signal1}-----------------------------------${2:signal2}
+$0
+endsnippet
+
+# iniit a experiment 
+# <ctrl-k> while visual mode  to get the VISUAL value!
+snippet ex1 "just a snippet for a experiment " b 
+/****************************/
+${1:${VISUAL:none}}
+$1
+${VISUAL}$0
+/****************************/
+endsnippet
+
