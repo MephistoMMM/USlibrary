@@ -20,3 +20,11 @@ Email: mephistommm@gmail.com
 """
 
 endsnippet
+
+# if python main , run something
+snippet ifmain "if python main, run..." b
+if __name__ == "__main__":
+	${1:import doctest
+	doctest.testmod()}
+$0
+endsnippet
