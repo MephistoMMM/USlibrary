@@ -11,12 +11,14 @@
 snippet init.snip "init snippet file" b
 # ${1:Description} 
 # 
-# Index:
-#	$2
-# 
 # Author: Mephis Pheies
 # Email: mephistommm@gmail.com
-# Update: ${3:`date +%d`}.${4:`date +%m`}.`date +%Y`
+# Update: `date  "+%d %m %Y"` 
 $0
+endsnippet
+
+# insert a shell data command string
+snippet dateformat "format date shell command" 
+\`date "+%d %m %Y"\`
 endsnippet
 

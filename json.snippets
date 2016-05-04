@@ -1,0 +1,30 @@
+# This file defines snippets for json file
+# 
+# Author: Mephis Pheies
+# Email: mephistommm@gmail.com
+# Update: 25.04.2016
+
+# for eslint config file in package.json
+snippet eslint "eslint configs" 
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": ${1:6},
+      "sourceType": ${2:"module"},
+      "ecmaFeatures": {
+		"impliedStrict": true,
+		${3:"jsx": true}
+      }
+    },
+    "extends": "eslint:recommended",
+    "rules":{
+      "semi": [1, "never"],}
+	  "quotes": [1, "double"]
+    },
+    "env": {
+      "mocha": ${4:true},
+      "node": ${5: true},
+	  "es6": ${6: false},
+	  "jest": ${7: false},
+    }
+  }$0
+endsnippet

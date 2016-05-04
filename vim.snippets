@@ -1,0 +1,35 @@
+# Some snippets for vimscript 
+# 
+# Author: Mephis Pheies
+# Email: mephistommm@gmail.com
+# Update: 03.05.2016
+
+# init a vim file head
+snippet init.vim "add vimscript head" b
+" ${1:File Name}
+" Maintainer: Mephis Pheies ( MephistoMMM )	
+" Email: mephistommm@gmail.com
+" Version:	${2:0.1.0}
+" Last Change: `date "+%d %m %Y"`	
+
+" Introduction: 
+" ${3:some simple Introduction}
+
+" Description:
+" ${4:details Description}
+
+$0
+endsnippet
+
+# changer info
+snippet ChangeInfo "insert my info to my-changed files" b
+" Changer: Mephis Pheies ( MephistoMMM )
+" Changer Email: mephistommm@gmail.com
+" Changer Info: 
+"	${1:info}
+$0
+endsnippet
+
+snippet curburname "get buffer name of current file" 
+bufname(winbufnr(winnr()))$0
+endsnippet
